@@ -1,18 +1,25 @@
 {
+  "frame": {
+    "name": "philosophers ",
+    "version": "1",
+    "iconUrl": "https://i.ibb.co/8nvRhNHy/app-logo-4.png",
+    "homeUrl": "https://philosophers-farcasters-wixw.vercel.app",
+    "imageUrl": "https://i.ibb.co/8nvRhNHy/app-logo-4.png",
+    "buttonTitle": "Wager on your beliefs ",
+    "splashImageUrl": "https://i.ibb.co/8nvRhNHy/app-logo-4.png",
+    "splashBackgroundColor": "#808080",
+    "webhookUrl": "https://philosophers-farcasters-wixw.vercel.app/api/webhook",
+    "subtitle": "wager on your beliefs ",
+    "description": "wager on your beliefs ",
+    "screenshotUrls": [
+      "https://i.ibb.co/8nvRhNHy/app-logo-4.png"
+    ],
+    "primaryCategory": "social",
+    "heroImageUrl": "https://i.ibb.co/8nvRhNHy/app-logo-4.png"
+  },
   "accountAssociation": {
     "header": "eyJmaWQiOjIzMzU3NzYsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyNjg2NzQyRTEwQTc1ZkY0MDI1MWIzREU0MzVDQUQ3N2MxQjkwNDAzIn0",
     "payload": "eyJkb21haW4iOiJwaGlsb3NvcGhlcnMtZmFyY2FzdGVycy13aXh3LnZlcmNlbC5hcHAifQ",
     "signature": "Ow71L3LOPKKImjAxN4Y2svJ1+CF48B4x4eXCO1H9cD5VGHjmlynPD/L3Dip5mhIrDkJjRtUNijaefTrhdbu+0xw="
-  },
-  "frame": {
-    "version": "1",
-    "name": "Example Frame",
-    "iconUrl": "https://philosophers-farcasters-wixw.vercel.app/icon.png",
-    "homeUrl": "https://philosophers-farcasters-wixw.vercel.app",
-    "imageUrl": "https://philosophers-farcasters-wixw.vercel.app/image.png",
-    "buttonTitle": "Check this out",
-    "splashImageUrl": "https://philosophers-farcasters-wixw.vercel.app/splash.png",
-    "splashBackgroundColor": "#eeccff",
-    "webhookUrl": "https://philosophers-farcasters-wixw.vercel.app/api/webhook"
   }
 }

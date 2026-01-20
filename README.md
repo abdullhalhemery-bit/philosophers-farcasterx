@@ -1,20 +1,12 @@
-```markdown
 # The Philosophers
 
-A daily philosophical prediction & wagering application built on Base network.
-
-## Features
-
-- Daily philosophical questions
-- Multi-token support (ETH, USDC, DAI)
-- 3% protocol fees
-- On-chain verification
-- Farcaster integration
-- Real-time leaderboard
+A daily philosophical prediction application on Base network.
 
 ## Installation
 
-```bash
 npm install
 npm start
-```
+
+## Deploy
+
+Push to GitHub and connect to Vercel.

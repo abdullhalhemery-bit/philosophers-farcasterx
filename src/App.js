@@ -59,7 +59,7 @@ export default function ThePhilosophers() {
                 onClick={() => setShowAbout(false)}
                 className="text-slate-400 hover:text-slate-200 text-2xl"
               >
-                ×
+                X
               </button>
             </div>
             <div className="p-6 space-y-6">
@@ -72,10 +72,10 @@ export default function ThePhilosophers() {
               <section>
                 <h3 className="text-lg font-light text-slate-100 mb-3">Key Features</h3>
                 <ul className="text-slate-400 text-sm space-y-2">
-                  <li>• Multi-token support (ETH, USDC, DAI)</li>
-                  <li>• 3% protocol fees on winnings</li>
-                  <li>• On-chain verification required</li>
-                  <li>• Transparent pool distribution</li>
+                  <li>Multi-token support ETH, USDC, DAI</li>
+                  <li>3% protocol fees on winnings</li>
+                  <li>On-chain verification required</li>
+                  <li>Transparent pool distribution</li>
                 </ul>
               </section>
             </div>
@@ -83,7 +83,6 @@ export default function ThePhilosophers() {
         </div>
       )}
 
-      {/* Top Navigation */}
       <div className="sticky top-0 z-40 bg-slate-950/80 backdrop-blur border-b border-slate-800">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="text-lg font-light text-slate-100">The Philosophers</div>
@@ -133,13 +132,12 @@ export default function ThePhilosophers() {
         </div>
       </div>
 
-      {/* Content */}
       <div className="max-w-4xl mx-auto px-4 py-8 pb-32">
         {activeView === 'question' && (
           <div className="space-y-8">
             <div className="flex flex-col items-center justify-center min-h-80">
               <div className="max-w-2xl w-full text-center space-y-8">
-                <div className="text-xs text-slate-500">Today's Question</div>
+                <div className="text-xs text-slate-500">Todays Question</div>
                 <h2 className="text-2xl md:text-3xl font-light text-slate-100 leading-relaxed">
                   {currentQuestion.text}
                 </h2>
@@ -176,7 +174,7 @@ export default function ThePhilosophers() {
 
                 <input
                   type="number"
-                  placeholder={`Amount (${currentToken})`}
+                  placeholder={`Amount ${currentToken}`}
                   className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-600"
                 />
 
@@ -274,14 +272,13 @@ export default function ThePhilosophers() {
         )}
       </div>
 
-      {/* Bottom Tabs */}
       <div className="fixed bottom-0 left-0 right-0 bg-slate-950/80 backdrop-blur border-t border-slate-800">
         <div className="max-w-4xl mx-auto px-4 flex items-center justify-around">
           {[
-            { id: 'question', label: 'Today', icon: '📖' },
-            { id: 'history', label: 'Archive', icon: '📚' },
-            { id: 'leaderboard', label: 'Leaderboard', icon: '🏆' },
-            { id: 'profile', label: 'Profile', icon: '👤' }
+            { id: 'question', label: 'Today', icon: 'book' },
+            { id: 'history', label: 'Archive', icon: 'library' },
+            { id: 'leaderboard', label: 'Leaderboard', icon: 'trophy' },
+            { id: 'profile', label: 'Profile', icon: 'user' }
           ].map(nav => (
             <button
               key={nav.id}
@@ -292,7 +289,7 @@ export default function ThePhilosophers() {
                   : 'border-transparent text-slate-500 hover:text-slate-400'
               }`}
             >
-              <div className="text-xl">{nav.icon}</div>
+              <div className="text-xl">{nav.icon === 'book' ? '📖' : nav.icon === 'library' ? '📚' : nav.icon === 'trophy' ? '🏆' : '👤'}</div>
               <div className="text-xs font-light mt-1">{nav.label}</div>
             </button>
           ))}

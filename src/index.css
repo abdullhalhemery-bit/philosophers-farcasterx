@@ -1,3 +1,5 @@
+/* src/index.css */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,31 +18,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-```
-
----
-
-## **الملف 5: src/App.js**
-
-انسخ الكود من philosophers_farcaster (بالكامل)
-
----
-
-## **الملف 6: .gitignore**
-```
-node_modules
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.DS_Store
-build
-dist
-.idea
-.vscode
-*.swp
-*.swo

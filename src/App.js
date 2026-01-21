@@ -1,31 +1,21 @@
-// ============= التعديل الأول: استيراد المكتبات =============
 import React, { useState, useEffect } from 'react';
-// هذا هو السطر الجديد الذي يستدعي مكتبة فاركاستر
+// تعديل 1: استيراد مكتبة فاركاستر
 import FarcasterSDK from '@farcaster/miniapp-sdk';
-// =========================================================
-
-// ============= التعديل الثاني: تهيئة الـ SDK ==============
-// نقوم بإنشاء كائن الـ SDK هنا، مرة واحدة فقط
-const sdk = new FarcasterSDK();
-// =========================================================
-
 
 export default function ThePhilosophers() {
-  // لقد حذفنا السطر الخاص بـ appState من هنا
+  // تعديل 2: حذف هذا السطر لأنه غير مستخدم ويسبب خطأ في البناء
+  // const [appState, setAppState] = useState('dashboard'); 
   const [currentToken, setCurrentToken] = useState('ETH');
   const [activeView, setActiveView] = useState('question');
   const [showAbout, setShowAbout] = useState(false);
   const [showTokenSelector, setShowTokenSelector] = useState(false);
 
-  // ... باقي الكود
-
-  // ============= التعديل الثالث: إخبار Warpcast بأن التطبيق جاهز ==============
-  // هذا الكود يتم تشغيله مرة واحدة عند تحميل التطبيق ليخبر Warpcast
-  // بإخفاء شاشة التحميل وعرض تطبيقك.
+  // تعديل 3: إضافة هذا الجزء لحل مشكلة الشاشة البيضاء
+  // هذا الكود يضمن تهيئة الـ SDK فقط داخل المتصفح
   useEffect(() => {
+    const sdk = new FarcasterSDK();
     sdk.actions.ready();
   }, []);
-  // =========================================================================
 
 
   const TOKENS = {
@@ -69,7 +59,7 @@ export default function ThePhilosophers() {
     { rank: 5, name: 'you.eth', wagers: 28, rewards: 1.5 }
   ];
 
-    // باقي الكود الخاص بك لم يتم تغييره على الإطلاق
+  // لا يوجد أي تغيير في كل الكود التالي (جزء الواجهة الرسومية)
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
       {showAbout && (

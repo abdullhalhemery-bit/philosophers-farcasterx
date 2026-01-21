@@ -1,22 +1,24 @@
-import React, { useState, useEffect } from 'react';
-
-export default function ThePhilosophers() {
-  const [appState, setAppState] = useState('dashboard');
-  const [currentToken, setCurrentToken] = useState('ETH');
-  const [activeView, setActiveView] = useState('question');
-  const [showAbout, setShowAbout] = useState(false);
-  const [showTokenSelector, setShowTokenSelector] = useState(false);
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.parent) {
-      try {
-        window.parent.postMessage({
-          type: 'FRAME_READY',
-          data: {}
-        }, '*');
-      } catch (error) {
-        console.log('Frame SDK not available');
-      }
-    }
-  }, []);
+{
+  "name": "philosophers-farcaster",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "@farcaster/miniapp-sdk": "^0.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": ["react-app"]
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  }
+}

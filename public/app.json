@@ -1,0 +1,18 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjIzMzU3NzYsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyNjg2NzQyRTEwQTc1ZkY0MDI1MWIzREU0MzVDQUQ3N2MxQjkwNDAzIn0",
+    "payload": "eyJkb21haW4iOiJwaGlsb3NvcGhlcnMtZmFyY2FzdGVycy13aXh3LnZlcmNlbC5hcHAifQ",
+    "signature": "Ow71L3LOPKKImjAxN4Y2svJ1+CF48B4x4eXCO1H9cD5VGHjmlynPD/L3Dip5mhIrDkJjRtUNijaefTrhdbu+0xw="
+  },
+  "frame": {
+    "version": "1",
+    "name": "The Philosophers",
+    "iconUrl": "https://philosophers-farcasters-wixw.vercel.app/icon.png",
+    "homeUrl": "https://philosophers-farcasters-wixw.vercel.app",
+    "imageUrl": "https://philosophers-farcasters-wixw.vercel.app/image.png",
+    "buttonTitle": "Enter The Philosophers",
+    "splashImageUrl": "https://philosophers-farcasters-wixw.vercel.app/splash.png",
+    "splashBackgroundColor": "#0f172a",
+    "webhookUrl": "https://philosophers-farcasters-wixw.vercel.app/api/webhook"
+  }
+}

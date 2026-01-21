@@ -8,6 +8,9 @@
     "react-scripts": "5.0.1",
     "@farcaster/miniapp-sdk": "^0.1.0"
   },
+  "overrides": {
+    "typescript": "^5.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
